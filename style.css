@@ -21,9 +21,6 @@ header{
     /* background-color: blueviolet; */
 }
 
-.contenedorTitulo{
-    /* width: 50%; */
-}
 
 .tituloPrincipal{
     font-size: 3vmin;
@@ -77,13 +74,6 @@ main{
     height: 80vh; 
 
     /* Utiliza el 100% de la altura de la ventana */
-}
-
-.cMensaje, .cResultado {
-    /* Ancho de cada contenedor */
-    /* width: 45%;  */
-    /* border-radius: 8px; */
-    /* height: 80%; */
 }
 
 .cMensaje {
