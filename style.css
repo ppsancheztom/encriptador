@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: 100vh;
     background-color: #f0f0f0;
     background-image: url(imgs/fondoFullmetal.jpeg);
     background-size: cover;
@@ -74,23 +74,26 @@ main{
 .cMensaje {
     /* display: flex; */
     flex-direction: column;
-    align-items: flex-start; /* Alinea el contenido a la izquierda */
+    align-items: center; /* Alinea el contenido a la izquierda */
     width: 70%;
+    
 }
 
 .cResultado {
     /* display: flex; */
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: flex-end; /* Alinea el contenido a la derecha */
+    margin-top: 0px;
     /* position: right; */
-    width: 20%;
+    width: 40%;
+    height: 80vh;
 }
 
 .txtMensaje{
     width: 100%;
     height: 80%;
     resize: none;
-    font-size: 20px;
+    font-size: 30px;
     font-family: "Kanit", sans-serif;
     font-weight: bold;
     border-radius: 8px;
@@ -99,17 +102,132 @@ main{
 }
 
 .txtMensaje:hover{
-    box-shadow: 1px 1px 12px 7px rgba(157,8,35,0.8);
+    box-shadow: 1px 1px 15px 10px rgba(157,8,35,0.9);
+}
+
+.txtMensaje::placeholder{
+    font-size: 30px;
+    color: #444333;
+    letter-spacing: 3px;
 }
 
 .txtResultado{
     height: 100%;
     width: 100%;
+    /* margin-top: 0px; */
     background-color: rgba(255,255,255,0.6);
     border-radius: 8px;
     transition: 0.6s;
 }
 
 .txtResultado:hover{
-    box-shadow: 1px 1px 12px 7px rgba(157,8,35,0.8);
+    box-shadow: 1px 1px 15px 10px rgba(157,8,35,0.8);
+}
+
+.simbolo{
+    background-color: #A50A1F;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-right: 4px;
+    margin-top: 3px;
+}
+
+.condiciones{
+    display: inline-block;
+    position: relative;
+    /* padding: 2px; */
+    box-sizing: border-box;
+    color: black;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1.3px;
+    margin-top: 0px;
+    background-color: rgba(255,255,255,0.8);
+    width: 340px;
+    height: 30px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+/* ? Inicio animacion condiciones */
+
+.condiciones::before,
+.condiciones::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    /* top: 50%; */
+    /* left:50%; */
+    /* transform: translate(-50%, -50%); Centra el círculo */
+    background-color: rgba(255, 255, 255, 0.5); /* Color de la ola */
+    border-radius: 50%;
+    animation: olaAnimacion 3s infinite ease-in-out;
+}
+
+.condiciones::before {
+    top: -50px;
+    left: -50px;
+}
+
+.condiciones::after {
+    bottom: -50px;
+    right: -50px;
+}
+
+@keyframes olaAnimacion {
+    0% {
+        transform: scale(0.5);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+/* ? fin animacion condiciones */
+
+.boton{
+    width: 230px;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Kanit", sans-serif;
+    border: 0px;
+}
+
+.encriptar{
+    background-color: #A50A1F;
+    color: #fefefe;
+    letter-spacing: 3px;
+    transition: 1s;
+}
+
+.encriptar:hover{
+    box-shadow: 1px 1px 15px 10px rgba(0,0,0,0.8);
+    background-color: #E21A02;
+}
+
+.desencriptar{
+    background-color: #000000;
+    /* color: #DA0321; */
+    color: white;
+    letter-spacing: 3px;
+    transition: 1s;
+}
+
+.desencriptar:hover{
+    box-shadow: 1px 1px 15px 10px rgba(255,0,0,0.8);
+    background-color: #2A2829;
 }
