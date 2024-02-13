@@ -42,7 +42,7 @@ header{
 }
 
 .ondulado {
-  color: crimson;
+  color: #EA0007;
   animation: ondulado 1.5s ease-in-out infinite;
 }
 
