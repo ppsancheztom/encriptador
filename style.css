@@ -1,7 +1,7 @@
 body{
-    margin: 0;
-    padding: 0;
-    height: 100vh;
+    /* margin: 0; */
+    /* padding: 0; */
+    height: 90vh;
     background-color: #f0f0f0;
     background-image: url(imgs/fondoFullmetal.jpeg);
     background-size: cover;
@@ -59,36 +59,79 @@ header{
 
 main{
     display: flex;
-    /* height: 80%; */
+    height: 90%;
 }
 
 .contenedor {
     display: flex;
-    margin-top: 10px;
+    margin-top: 20px;
     justify-content: space-between;
     padding-left: 30px;
     padding-right: 30px;
-    height: 80vh; 
+    /* height: 80%;  */
 }
 
 
 .cResultado {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end; /* Alinea el contenido a la derecha */
-    margin-top: 0px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    align-items: center; 
+    justify-content: center;
+    /* Alinea el contenido a la derecha */
+    /* margin-top: 0px; */
     position: relative;
     width: 30%;
-    height: 80vh;
+    /* height: 100%; */
 }
 
-.contenido{
-    flex-grow: 1;
+.txtResultado{
+    height: 100%;
+    width: 100%;
+    /* margin-top: 0px; */
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 8px;
+    transition: 0.6s;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.txtResultado:hover{
+    box-shadow: 1px 1px 15px 10px rgba(157,8,35,0.8);
+}
+
+.contenidoMensaje{
+    /* flex-grow: 1; */
+}
+
+.avisoInicial{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.imagenIni{
+    width: 70%;
+    display: block;
+    margin: auto;
+    /* align-items: center;
+    justify-content: center; */
+}
+.inicialMensaje{
+    letter-spacing: 1px;
+    margin-top: 30px;
+    text-align: center;
+}
+.inicialMensaje2{
+
 }
 
 .botonCopiar{
     position: absolute;
-    font-size: 17px;
+    display: none;
+    font-size: 2.2vmin;
     font-weight: bold;
     letter-spacing: 3px;
     color: white;
@@ -113,7 +156,8 @@ main{
     flex-direction: column;
     align-items: center; /* Alinea el contenido a la izquierda */
     width: 70%;
-    
+    height: 80%;
+    margin-top: 5%;
 }
 
 .txtMensaje{
@@ -133,33 +177,20 @@ main{
 }
 
 .txtMensaje::placeholder{
-    font-size: 30px;
+    font-size: 3vmin;
     color: #444333;
     letter-spacing: 3px;
-}
-
-.txtResultado{
-    height: 100%;
-    width: 100%;
-    /* margin-top: 0px; */
-    background-color: rgba(255,255,255,0.6);
-    border-radius: 8px;
-    transition: 0.6s;
-}
-
-.txtResultado:hover{
-    box-shadow: 1px 1px 15px 10px rgba(157,8,35,0.8);
 }
 
 .simbolo{
     background-color: #A50A1F;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: 2.5vmin;
+    height: 2.5vmin;
     display: inline-flex;
     text-align: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 2vmin;
     font-weight: bold;
     color: white;
     margin-right: 4px;
@@ -174,12 +205,12 @@ main{
     color: black;
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
-    font-size: 14px;
+    font-size: 2vmin;
     letter-spacing: 1.3px;
-    margin-top: 0px;
+    /* margin-top: 0px; */
     background-color: rgba(255,255,255,0.8);
-    width: 340px;
-    height: 30px;
+    width: 60vmin;
+    height: 4vmin;
     text-align: center;
     justify-content: center;
     border-radius: 8px;
