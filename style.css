@@ -71,22 +71,49 @@ main{
     height: 80vh; 
 }
 
+
+.cResultado {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Alinea el contenido a la derecha */
+    margin-top: 0px;
+    position: relative;
+    width: 30%;
+    height: 80vh;
+}
+
+.contenido{
+    flex-grow: 1;
+}
+
+.botonCopiar{
+    position: absolute;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: white;
+    background-color: rgba(157,8,35,1);
+    left: 50%;
+    bottom: 30px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    transform: translateX(-50%);
+    width: 60%;
+    transition: 1s;
+}
+
+.botonCopiar:hover{
+    background-color: #E21A02;
+    box-shadow: 1px 1px 15px 10px rgba(0,0,0,0.8);
+}
+
 .cMensaje {
     /* display: flex; */
     flex-direction: column;
     align-items: center; /* Alinea el contenido a la izquierda */
     width: 70%;
     
-}
-
-.cResultado {
-    /* display: flex; */
-    /* flex-direction: column; */
-    align-items: flex-end; /* Alinea el contenido a la derecha */
-    margin-top: 0px;
-    /* position: right; */
-    width: 40%;
-    height: 80vh;
 }
 
 .txtMensaje{
