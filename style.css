@@ -123,10 +123,13 @@ main{
     letter-spacing: 1px;
     margin-top: 30px;
     text-align: center;
+    /* font-weight: 500; */
 }
-.inicialMensaje2{
 
+.parrafo{
+    font-size: 2vmin;
 }
+
 
 .botonCopiar{
     position: absolute;
