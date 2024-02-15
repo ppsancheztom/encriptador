@@ -30,3 +30,17 @@ function desAvisoIni(){
 
     document.getElementById('Mensaje').value='';
 }
+
+function actAvisoIni(){
+     // activar elementos con la clase "avisoInicial"
+    var elementosAviso = document.querySelectorAll('.avisoInicial');
+    elementosAviso.forEach(function(elemento) {
+        elemento.style.display='block';
+    });
+
+    document.getElementById('btnCopiar').style.display='none'
+}
+
+function copiar(){
+    actAvisoIni();
+}
