@@ -29,7 +29,7 @@
             <p class="condiciones"><span class="simbolo">!</span>Solo letras minúsculas y sin acentos.</p>
             
             <div class="botones">
-                <button class="boton encriptar">ENCRIPTAR</button>
+                <button onclick="encriptar()" class="boton encriptar" id="btnEncriptar">ENCRIPTAR</button>
                 <button class="boton desencriptar">DESENCRIPTAR</button>
             </div>
         </div>
@@ -44,10 +44,11 @@
                     <h2 class="inicialMensaje subT">Ningún mesaje fue encontrado</h2>
                     <p class="inicialMensaje parrafo"> Ingrese el texto que desea encriptar o desencriptar.</p>
                 </div>
-                    <button class="botonCopiar">Copiar</button>
+                    <button class="botonCopiar" id="btnCopiar">Copiar</button>
             </div>
         </div>
 
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

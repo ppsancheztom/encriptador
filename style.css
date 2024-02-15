@@ -105,6 +105,7 @@ main{
 }
 
 .avisoInicial{
+    /* display: none; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -114,7 +115,7 @@ main{
 
 .imagenIni{
     width: 70%;
-    display: block;
+    /* display: block; */
     margin: auto;
     /* align-items: center;
     justify-content: center; */
