@@ -293,3 +293,59 @@ main{
     box-shadow: 1px 1px 15px 10px rgba(255,0,0,0.8);
     background-color: #2A2829;
 }
+
+#emergente {
+    position: fixed; /* Posición fija para que esté por encima del contenido */
+    display: none;
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Centrar completamente */
+    width: 500px; /* Ancho del modal */
+    height: 360px; /* Altura del modal */
+    background-color: rgba(255, 255, 255, 0.95); /* Color de fondo */
+    border-radius: 10px; /* Borde redondeado */
+    padding: 20px; /* Espacio interno */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    text-align: center;
+    letter-spacing: 1.2px;
+    z-index: 999; /* Z-index para asegurarse de que esté encima de otros elementos */
+}
+
+#emergente .imagenAviso {
+    width: 50%; /* Asegura que la imagen se ajuste al ancho del modal */
+    margin: 0 auto 10px; /* Espacio inferior entre la imagen y el texto */
+
+}
+
+#emergente .avisoEmergente {
+    font-size: 16px; /* Tamaño de fuente para el texto */
+    margin-bottom: 10px; /* Espacio inferior entre el texto y el botón */
+}
+
+#emergente .subT{
+    font-size: 20px;
+    font-weight: bold;
+    color: #E21A02;
+}
+
+#emergente .botonOk {
+    padding: 10px 20px; /* Espaciado interno para el botón */
+    font-size: 14px; /* Tamaño de fuente del botón */
+    background-color: #A50A1F; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Borde */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cursor al pasar por encima */
+    margin: 0 auto;
+}
+
+#emergente .botonOk:hover{
+    background-color: #E21A02;
+    box-shadow: 1px 1px 30px 4px rgba(0,0,0,0.5);
+}
+
+#emergente .puntos{
+    /* width: 80%; */
+    font-weight: bold;
+    text-align: center;
+}
