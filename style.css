@@ -140,7 +140,7 @@ main{
 .botonCopiar{
     position: absolute;
     display: none;
-    font-size: 2.2vmin;
+    font-size: 2.5vmin;
     font-weight: bold;
     letter-spacing: 3px;
     color: white;
@@ -353,4 +353,44 @@ main{
     /* width: 80%; */
     font-weight: bold;
     text-align: center;
+}
+
+/* ? Aplica cierta condicion cuando el monitor del equipo es menos a 480px */
+@media screen and (max-width: 800px) {
+    main {
+        flex-direction: column;
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+
+    .cMensaje,
+    .cResultado {
+        width: 90%;
+    }
+
+    .cMensaje {
+        height: 60%; /* Ocupa la mitad de la altura del contenedor principal */
+    }
+
+    .cResultado {
+        /* overflow-y: auto; */
+        height: 40%; /* Ocupa la mitad de la altura del contenedor principal */
+    }
+
+    .txtResultado{
+        overflow-y: auto;
+        position: relative;
+    }
+    
+    .botones{
+        justify-content: center;
+    }
+
+    .boton{
+        margin: 10px;
+    }
+
+    .imagenIni{
+        display: none;
+    }
+
 }

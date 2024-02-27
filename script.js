@@ -61,12 +61,39 @@ function encriptar(){
 
 function desencriptar(){
     let palabras= leerMensaje();
-    console.log('palabras: '+ palabras)
+    limpiar="";
+    document.getElementById('mensajeED').textContent=limpiar;
+
+    if (palabras==null){
+
+    }else{
+        //convierte a cadenas de texto
+        palabras=palabras.toString();
+
+        palabras = palabras.replace(/enter/g, 'e');
+        palabras = palabras.replace(/imes/g, 'i');
+        palabras = palabras.replace(/ai/g, 'a');
+        palabras = palabras.replace(/ober/g, 'o');
+        palabras = palabras.replace(/ufat/g, 'u');
+        palabras = palabras.replace(/,/g,' ');
+
+        let divMensaje = document.getElementById('mensajeED');
+
+            // ? Crear un elemento parrafo para cada palabra
+            let nuevoParrafo = document.createElement('p');
+            nuevoParrafo.textContent=palabras;
+            divMensaje.appendChild(nuevoParrafo);
+
+        // console.log('Palabras desencriptadas: ' + palabras);
+    }
+
+    
 
 }
 
 function leerMensaje(){
     let mensaje = document.querySelector('.txtMensaje');
+
     let textoMensaje = mensaje.value;
     
     if(!regexSoloLetrasMinusculas.test(textoMensaje)){
