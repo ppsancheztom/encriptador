@@ -133,7 +133,7 @@ main{
 }
 
 .parrafo{
-    font-size: 2vmin;
+    font-size: 3vmin;
 }
 
 
@@ -399,5 +399,19 @@ main{
 
     #emergente{
         width: 250px;
+    }
+
+    .parrafo{
+        font-size: 18px;
+        font-weight: 400px;
+    }
+
+    #Mensaje::placeholder{
+        font-size: 20px;
+    }
+
+    .condiciones{
+        font-size: 12px;
+        height: 15%;
     }
 }
