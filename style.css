@@ -393,6 +393,11 @@ main{
         display: none;
     }
 
+    body{
+        background-size:contain;
+        background-repeat: initial;
+    }
+
 }
 
 @media screen and (max-width: 450px) {
@@ -413,5 +418,10 @@ main{
     .condiciones{
         font-size: 12px;
         height: 15%;
+    }
+
+    body{
+        background-size:contain;
+        background-repeat: unset;
     }
 }
